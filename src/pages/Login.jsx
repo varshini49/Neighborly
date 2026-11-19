@@ -19,10 +19,10 @@ function Login() {
     setLoading(true)
     setMessage('')
 
-    try {
-      const response = await fetch(
-        'http://https://neighborly-backend-dlpp.onrender.com/api/auth/register',
-        {
+   try {
+  const response = await fetch(
+    'https://neighborly-backend-dlpp.onrender.com/api/auth/register',
+    {
           method: 'POST',
           credentials: 'include',
           headers: {
@@ -61,10 +61,10 @@ function Login() {
     setLoading(true)
     setMessage('')
 
-    try {
-      const response = await fetch(
-        'http://https://neighborly-backend-dlpp.onrender.com/api/auth/login',
-        {
+  try {
+  const response = await fetch(
+    'https://neighborly-backend-dlpp.onrender.com/api/auth/login',
+    {
           method: 'POST',
           credentials: 'include',
           headers: {

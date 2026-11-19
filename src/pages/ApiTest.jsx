@@ -6,7 +6,7 @@ function ApiTest() {
   const [message, setMessage] = useState('Loading...')
 
   useEffect(() => {
-    fetch('http://https://neighborly-backend-dlpp.onrender.com/api/hello')
+    fetch('https://neighborly-backend-dlpp.onrender.com/api/hello')
       .then(response => response.text())
       .then(data => setMessage(data))
       .catch(error => setMessage('Backend connection failed'))
