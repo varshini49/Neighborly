@@ -7,7 +7,7 @@ function Dashboard() {
 const fetchAnnouncements = async () => {
   try {
     const response = await fetch(
-      'http://localhost:8080/api/announcements',
+      'http://https://neighborly-backend-dlpp.onrender.com/api/announcements',
       {
         credentials: 'include'
       }
@@ -38,7 +38,7 @@ const sendAnnouncement = async (e) => {
 
   try {
     const response = await fetch(
-      'http://localhost:8080/api/announcements',
+      'http://https://neighborly-backend-dlpp.onrender.com/api/announcements',
       {
         method: 'POST',
         credentials: 'include',
@@ -122,7 +122,7 @@ useEffect(() => {
   async function fetchRequests() {
     try {
       const response = await fetch(
-        'http://localhost:8080/api/requests'
+        'http://https://neighborly-backend-dlpp.onrender.com/api/requests'
       )
 
       if (!response.ok) {
@@ -145,7 +145,7 @@ useEffect(() => {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/users/${user.id}/location`
+        `http://https://neighborly-backend-dlpp.onrender.com/api/users/${user.id}/location`
       )
 
       if (!response.ok) {
@@ -168,7 +168,7 @@ useEffect(() => {
 const fetchMembers = async () => {
   try {
     const response = await fetch(
-      'http://localhost:8080/api/community/members',
+      'http://https://neighborly-backend-dlpp.onrender.com/api/community/members',
       {
         credentials: 'include'
       }
@@ -200,7 +200,7 @@ const fetchMembers = async () => {
     async function fetchDonations() {
       try {
         const response = await fetch(
-          'http://localhost:8080/api/donations'
+          'http://https://neighborly-backend-dlpp.onrender.com/api/donations'
         )
 
         if (!response.ok) {
@@ -268,7 +268,7 @@ const fetchMembers = async () => {
 
     try {
       const response = await fetch(
-        'http://localhost:8080/api/requests',
+        'http://https://neighborly-backend-dlpp.onrender.com/api/requests',
         {
           method: 'POST',
           headers: {
@@ -312,7 +312,7 @@ const fetchMembers = async () => {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/requests/${id}`,
+        `http://https://neighborly-backend-dlpp.onrender.com/api/requests/${id}`,
         {
           method: 'DELETE'
         }
@@ -344,7 +344,7 @@ const fetchMembers = async () => {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/requests/${id}`,
+        `http://https://neighborly-backend-dlpp.onrender.com/api/requests/${id}`,
         {
           method: 'PUT',
           headers: {
@@ -386,7 +386,7 @@ async function volunteerForRequest(id) {
 
   try {
     const response = await fetch(
-      'http://localhost:8080/api/volunteers',
+      'http://https://neighborly-backend-dlpp.onrender.com/api/volunteers',
       {
         method: 'POST',
         headers: {
@@ -441,7 +441,7 @@ async function volunteerForRequest(id) {
 
     try {
       const response = await fetch(
-        'http://localhost:8080/api/donations',
+        'http://https://neighborly-backend-dlpp.onrender.com/api/donations',
         {
           method: 'POST',
           headers: {
@@ -482,7 +482,7 @@ async function volunteerForRequest(id) {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/donations/${id}`,
+        `http://https://neighborly-backend-dlpp.onrender.com/api/donations/${id}`,
         {
           method: 'DELETE'
         }
@@ -516,7 +516,7 @@ async function volunteerForRequest(id) {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/donations/${id}`,
+        `http://https://neighborly-backend-dlpp.onrender.com/api/donations/${id}`,
         {
           method: 'PUT',
           headers: {
@@ -554,7 +554,7 @@ async function saveProfile() {
 
   try {
     const response = await fetch(
-      `http://localhost:8080/api/users/${user.id}/profile`,
+      `http://https://neighborly-backend-dlpp.onrender.com/api/users/${user.id}/profile`,
       {
         method: 'PUT',
         headers: {
@@ -598,7 +598,7 @@ const updateLocation = async (event) => {
 
   try {
     const response = await fetch(
-      `http://localhost:8080/api/users/${user.id}/location`,
+      `http://https://neighborly-backend-dlpp.onrender.com/api/users/${user.id}/location`,
       {
         method: 'PUT',
         headers: {
