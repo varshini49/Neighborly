@@ -6,7 +6,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(
+    origins = {
+        "http://localhost:5173",
+        "https://neighborly-kohl.vercel.app"
+    }
+)
 public class HelloController {
 
     @GetMapping("/api/hello")

@@ -13,7 +13,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/announcements")
 @CrossOrigin(
-    origins = "http://localhost:5173",
+    origins = {"http://localhost:5173", "https://neighborly-kohl.vercel.app"},
     allowCredentials = "true"
 )
 public class AnnouncementController {

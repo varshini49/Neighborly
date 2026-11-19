@@ -10,7 +10,12 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/users")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(
+    origins = {
+        "http://localhost:5173",
+        "https://neighborly-kohl.vercel.app"
+    }
+)
 public class UserController {
 
     private final UserRepository userRepository;

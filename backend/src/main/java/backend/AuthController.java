@@ -12,7 +12,10 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/auth")
 @CrossOrigin(
-    origins = "http://localhost:5173",
+    origins = {
+        "http://localhost:5173",
+        "https://neighborly-kohl.vercel.app"
+    },
     allowCredentials = "true"
 )
 public class AuthController {

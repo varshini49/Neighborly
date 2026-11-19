@@ -14,7 +14,10 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/community")
 @CrossOrigin(
-    origins = "http://localhost:5173",
+    origins = {
+        "http://localhost:5173",
+        "https://neighborly-kohl.vercel.app"
+    },
     allowCredentials = "true"
 )
 public class CommunityController {

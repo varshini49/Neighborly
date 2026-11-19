@@ -7,7 +7,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/donations")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(
+    origins = {
+        "http://localhost:5173",
+        "https://neighborly-kohl.vercel.app"
+    }
+)
 public class DonationController {
 
     private final DonationRepository repository;
